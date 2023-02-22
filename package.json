@@ -14,7 +14,8 @@
 		"storybook": "start-storybook -p 6006",
 		"build-storybook": "build-storybook",
 		"lint": "eslint './src/**/*.{js,ts,svelte}'",
-		"fetch-upstream": "git remote add upstream git@github.com:shopkeepjs/cobbler.git; git fetch upstream svelte && git merge upstream/svelte "
+		"fetch-upstream": "git remote add upstream git@github.com:shopkeepjs/cobbler.git; git fetch upstream svelte && git merge upstream/svelte ",
+		"prepare": "husky install"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.20.12",
