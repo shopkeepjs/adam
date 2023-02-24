@@ -1,16 +1,15 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
 import adapter from '@sveltejs/adapter-auto';
-// eslint-disable-next-line import/no-unresolved
 import { vitePreprocess } from '@sveltejs/kit/vite';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	// Consult https://kit.svelte.dev/docs/integrations#preprocessors
-	// for more information about preprocessors
 	preprocess: vitePreprocess(),
-
 	kit: {
 		adapter: adapter(),
+		alias: {
+			$library: 'src/lib',
+			$components: 'src/lib/components',
+		},
 	},
 };
 
